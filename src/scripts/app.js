@@ -26,16 +26,16 @@ import Storyteller from './plugins/jikkai.storyteller.js';
     storyteller.init({
         step: [
             {
-                message: '为什么人们总注目于流逝而去的星辰……',
-                speed: 40
+                message: '我总是擅长于遗忘一些重要的事情。',
+                speed: 70
             },
             {
-                message: '而忽视眼前浩瀚的星河。',
-                speed: 40
+                message: '比如说：',
+                speed: 60
             },
             {
-                message: 'We tend to forget that happiness doesn\'t come as a result of getting something we don\'t have, but rather of recognizing and appreciating what we do have.',
-                speed: 10
+                message: '呃……我要说什么来着？',
+                speed: 80
             }
         ]
     });

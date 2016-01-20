@@ -53,7 +53,7 @@ export default class Scroll {
                     }
                 }
             }, speed);
-        }, 13);
+        }, 0);
     }
 
 };
