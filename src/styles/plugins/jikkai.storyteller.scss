@@ -1,0 +1,22 @@
+[data-plugins="storyteller"] {
+    >p {
+        width: 24em;
+        font-size: 16px;
+        font-weight: 100;
+        >a {
+            position: relative;
+            top: 0.2em;
+            left: 2em;
+            width: 1em;
+            height: 1em;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAANwAAADcBYx2BhQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABmSURBVDiNxZPBDYBACAQXe7CEa8ZC7O+sygL8jx/1dackm4skPAgwCUs2ADkxWdsjAeECqqSSIgCt3IEDWDv9J98Ad1RgdgBc9dKatb8w9ARLxA0oX8uAouOFkJQySU/EtMP+N9MJkbA5nA7jpAUAAAAASUVORK5CYII=');
+            display: inline-block;
+            cursor: pointer;
+            animation: 1s next infinite;
+            @keyframes next {
+              from, to {left: 2em;}
+              50% {left: 1.5em;}
+            }
+        }
+    }
+}
