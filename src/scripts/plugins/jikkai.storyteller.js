@@ -36,24 +36,22 @@ export default class Scroll {
         let msgArr = msg.split('');
 
         let i = 0;
-
-        setTimeout(() => {
-            let interval = setInterval(() => {
-                p.innerHTML += msgArr[i];
-                i++;
-                if(i === msgArr.length) {
-                    clearInterval(interval);
-                    if(index < options.step.length - 1) {
-                        let a = document.createElement('a');
-                        a.onclick = () => {
-                            a.parentNode.removeChild(a);
-                            this.sendMessage(index + 1);
-                        };
-                        p.appendChild(a);
-                    }
+        
+        let interval = setInterval(() => {
+            p.innerHTML += msgArr[i];
+            i++;
+            if(i === msgArr.length) {
+                clearInterval(interval);
+                if(index < options.step.length - 1) {
+                    let a = document.createElement('a');
+                    a.onclick = () => {
+                        a.parentNode.removeChild(a);
+                        this.sendMessage(index + 1);
+                    };
+                    p.appendChild(a);
                 }
-            }, speed);
-        }, 0);
+            }
+        }, speed);
     }
 
 };
