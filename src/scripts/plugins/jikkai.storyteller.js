@@ -9,6 +9,7 @@ export default class Scroll {
 
     init(config) {
         this.options = this.extend(this.defaults, config);
+        this.sendMessage(0);
         return this;
     }
 
@@ -36,7 +37,7 @@ export default class Scroll {
         let msgArr = msg.split('');
 
         let i = 0;
-        
+
         let interval = setInterval(() => {
             p.innerHTML += msgArr[i];
             i++;

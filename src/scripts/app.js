@@ -1,6 +1,8 @@
 import Ajax from './utils/jikkai.ajax.js';
 import Scroll from './utils/jikkai.scroll.js';
+
 import Storyteller from './plugins/jikkai.storyteller.js';
+import Sns from './plugins/jikkai.sns.js';
 
 (function(window){
     // var ajax = new Ajax();
@@ -39,5 +41,35 @@ import Storyteller from './plugins/jikkai.storyteller.js';
             }
         ]
     });
-    storyteller.sendMessage(0);
+
+    var sns = new Sns();
+    sns.init({
+        icons: [
+            {
+                title: 'Github',
+                href: 'https://github.com/jikkai',
+                class: 'icon-Popular_GitHub'
+            },
+            {
+                title: 'Coding',
+                href: 'https://coding.net/u/Scharfrichter',
+                class: 'icon-CN_codingnet'
+            },
+            {
+                title: 'Zhihu',
+                href: 'https://www.zhihu.com/people/scharfrichter',
+                class: 'icon-CN_zhihu'
+            },
+            {
+                title: 'Weibo',
+                href: 'http://weibo.com/Scharfrichter',
+                class: 'icon-CN_sina_weibo'
+            },
+            {
+                title: 'Twitter',
+                href: 'https://twitter.com/yoruhato',
+                class: 'icon-Popular_Twitter'
+            }
+        ]
+    });
 })(window);
