@@ -1,4 +1,6 @@
-# Homepage
+# Homepage 
+
+Opoooooooos.....This version is deprecated.
 
 ## Intro
 Source code of my homepage which is built in ES6 + browserify + gulp.
