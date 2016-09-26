@@ -1,10 +1,16 @@
 {
   "name": "homepage",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
+  "scripts": {
+    "start": "node main.js"
   },
+  "dependencies": {
+    "vue": "^2.0.0-rc.7",
+    "vue-server-renderer": "^2.0.0-rc.7"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/jikkai/homepage.git"
