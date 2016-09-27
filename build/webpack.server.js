@@ -1,4 +1,3 @@
-
 const path = require('path')
 const externals = require('webpack-node-externals')
 const webpack = require('webpack')

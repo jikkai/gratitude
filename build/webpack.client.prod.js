@@ -1,6 +1,6 @@
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const config = require('./webpack.client')
+import webpack from 'webpack'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import config from './webpack.client'
 
 config.devtool = false;
 config.output.filename = '[name].bundle.js'
@@ -27,4 +27,4 @@ config.vue.loaders = {
   )
 }
 
-module.exports = config
+export default config

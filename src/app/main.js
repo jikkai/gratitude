@@ -8,6 +8,6 @@ if (typeof window !== 'undefined') {
   })
 } else {
   module.exports = new Vue({
-    render: h => h(App)
+    render: h => h.call(this, App)
   })
 }

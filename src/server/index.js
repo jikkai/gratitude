@@ -1,41 +1,35 @@
 import path from 'path'
-import Koa from 'koa'
-import convert from 'koa-convert'
-import serve from 'koa-static'
-import CombinedStream from 'combined-stream'
-import str from 'string-to-stream'
-const renderer = require('vue-server-renderer').createRenderer()
-const renderToStream = renderer.renderToStream
 
-import vm from '../app/main.js'
+import Koa from 'koa'
+import koaRouter from 'koa-router'
+import koaConvert from 'koa-convert'
+import koaStatic from 'koa-static'
 
 import webpack from 'webpack'
-import webpackConfig from '../../build/webpack.client.js'
-const compiler = webpack(webpackConfig)
-const devMiddleware = require('koa-webpack-dev-middleware')
-const hotMiddleware = require('koa-webpack-hot-middleware')
+import webpackDevMiddleware from 'koa-webpack-dev-middleware'
+import webpackHotMiddleware from 'koa-webpack-hot-middleware'
+
+import combinedStream from 'combined-stream'
+import str from 'string-to-stream'
+
+import { createRenderer } from 'vue-server-renderer'
+
+import vm from '../app/main.js'
+import config from '../../build/webpack.client'
+
 
 const app = new Koa()
+const router = koaRouter()
 
-app.use(convert(devMiddleware(compiler, {
-  publicPath: webpackConfig.output.publicPath,
-  stats: {
-    colors: true,
-    modules: false,
-    children: false,
-    chunks: false,
-    chunkModules: false
-  }
-})))
-app.use(convert(hotMiddleware(compiler)))
+const renderToStream = createRenderer().renderToStream
 
-app.use(serve(path.join(process.cwd(), 'dist'), {}))
+const compiler = webpack(config)
 
 
-app.use((ctx) => {
+router.get('/count', (ctx, next) => {
   ctx.type = 'text/html; charset=utf-8'
   const title = 'test'
-  const stream = CombinedStream.create()
+  const stream = combinedStream.create()
   stream.append(str(`
     <!DOCTYPE html>
     <html lang="en">
@@ -54,6 +48,21 @@ app.use((ctx) => {
   ctx.body = stream
 })
 
+app.use(koaConvert(webpackDevMiddleware(compiler, {
+  publicPath: config.output.publicPath,
+  stats: {
+    colors: true,
+    modules: false,
+    children: false,
+    chunks: false,
+    chunkModules: false
+  }
+})))
+app.use(koaConvert(webpackHotMiddleware(compiler)))
+
+app.use(koaStatic(path.join(process.cwd(), 'dist'), {}))
+
+app.use(router.routes())
 
 const port = 5000
 app.listen(port, () => {
