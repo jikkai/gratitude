@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import App from './demo.vue'
+import counter from './counter'
 
 if (typeof window !== 'undefined') {
   new Vue({
     el: '#app',
-    render: h => h(App)
+    render: h => h(counter)
   })
 } else {
   module.exports = new Vue({
-    render: h => h.call(this, App)
+    render: h => h.call(this, counter)
   })
 }

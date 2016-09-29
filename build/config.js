@@ -1,6 +1,6 @@
-import path from 'path'
+const path = require('path')
 
-export default {
+module.exports = {
   build : {
     index: path.resolve(__dirname,'../dist/index.html'),
     assetsRoots: path.resolve(__dirname,'../dist'),

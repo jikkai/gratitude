@@ -12,9 +12,8 @@
     },
     created() {
       setInterval(() => {
-        this.counter += 1
+        this.counter++
       }, 1000)
     }
   }
-
 </script>
