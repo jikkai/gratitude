@@ -17,13 +17,14 @@ config.plugins = config.plugins.concat([
     },
     comments: false
   }),
-  new ExtractTextPlugin('[name].[contenthash].css')
+  new ExtractTextPlugin('[name].bundle.css')
 ])
 
 config.vue.loaders = {
-  css: ExtractTextPlugin.extract(
-    'vue-style-loader',
-    'css-loader?sourceMap'
+  sass: ExtractTextPlugin.extract(
+    'vue-style-loader', 
+    'css-loader', 
+    'sass-loader'
   )
 }
 

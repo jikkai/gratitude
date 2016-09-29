@@ -12,7 +12,7 @@ module.exports = {
     filename: 'server.js'
   },
   resolve: {
-    extensions: ['', '.vue', '.js', '.json'],
+    extensions: ['', '.js', '.vue', '.css', '.json'],
   },
   module: {
     loaders: [
@@ -23,6 +23,13 @@ module.exports = {
       {
         test: /\.vue$/,
         loaders: ['vue']
+      },
+      {
+        test: /\.css$/,
+        loader: 'file',
+        query: {
+          name : 'server.css'
+        }
       },
       {
         test: /\.js$/,

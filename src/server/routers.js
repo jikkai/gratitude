@@ -7,7 +7,7 @@ import vm from '../app/main.js'
 const { renderToStream } = createRenderer()
 
 const template = vmStream => {
-  const title = 'test'
+  const title = 'Gratitude'
 
   const stream = combinedStream.create()
 
@@ -18,6 +18,8 @@ const template = vmStream => {
       <meta charset="utf-8">
       <title>${title}</title>
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+      <link rel="stylesheet" href="app.bundle.css">
     </head>
     <body>`)
   )
