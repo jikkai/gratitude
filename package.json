@@ -14,7 +14,7 @@
     "dev": {
       "command": "nodemon --watch src/server --exec \"npm run build:server && node\" server.js",
       "env": {
-        "PORT": 6000,
+        "PORT": 5555,
         "VUE_ENV": "server",
         "NODE_ENV": "development"
       }
@@ -22,7 +22,7 @@
     "start": {
       "command": "node server.js",
       "env": {
-        "PORT": 6000,
+        "PORT": 5555,
         "VUE_ENV": "server",
         "NODE_ENV": "production"
       }
