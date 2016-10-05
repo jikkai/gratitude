@@ -62,7 +62,7 @@
     "babel-plugin-transform-runtime": "^6.9.0",
     "babel-preset-latest": "^6.14.0",
     "better-npm-run": "0.0.11",
-    "cross-env": "^3.0.0",
+    "cross-env": "^3.1.1",
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
