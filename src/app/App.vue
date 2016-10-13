@@ -1,10 +1,15 @@
 <template>
   <div id='app'>
     <section id="profile">
-      <div id="profile-pic"></div>
-      <h1>{{profile.title}}</h1>
-      <h2>{{profile.subtitle}}</h2>
+      <header>
+        <div id="avatar"></div>
+        <h1>{{profile.title}}</h1>
+        <p>{{profile.subtitle}}</p>
+      </header>
     </section>
+    <footer>
+      © JANE DOE DESIGN: HTML5 UP
+    </footer>
   </div>
 </template>
 
@@ -25,37 +30,32 @@
   html,
   body {
     height: 100%;
-    background: url('./assets/bg.jpg') no-repeat; 
-    background-size: cover;
+    background-color: #FFF;
+    background-image: url(./assets/overlay.png), linear-gradient(60deg, rgba(255, 165, 150, .5) 5%, rgba(0, 228, 255, .35)), url(./assets/bg.jpg);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, cover, cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
     #app {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       #profile {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        #profile-pic {
-          width: 240px;
-          height: 240px;
-          background: url('./assets/jikkai.png') no-repeat;
-          background-size: cover;
-          border: 4px solid #FFF;
+        width: 400px;
+        padding: 66px 44px 44px 44px;
+        text-align: center;
+        background: #FFF;
+        border-radius: 4px;
+        box-sizing: border-box;
+        opacity: 0.95;
+        #avatar {
+          width: 122px;
+          height: 122px;
+          margin: auto;
+          background: url("./assets/jikkai.png");
           border-radius: 50%;
-          box-shadow: 0 0 50px 5px #FFF;
-        }
-        h1,
-        h2 {
-          color: #FFF;
-          text-shadow: 0 0 6px #FFF;
-        }
-        h1 {
-          font-size: 48px;
-          font-weight: normal;
-        }
-        h2 {
-          font-size: 14px;
         }
       }
     }
