@@ -36,7 +36,7 @@ app.use(koaStatic(path.join(process.cwd(), 'dist'), {}))
 
 app.use(router.routes())
 
-const port = process.env.PORT ? process.env.PORT : 3000
+const port = process.env.PORT ? process.env.PORT : 5555
 app.listen(port, () => {
   console.log(`==> Listening at http://localhost:${port}`)
 })
