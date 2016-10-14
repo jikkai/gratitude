@@ -1,14 +1,21 @@
 <template>
-  <div id='app'>
-    <section id="profile">
+  <div id="app">
+    <section>
       <header>
         <div id="avatar"></div>
         <h1>{{profile.title}}</h1>
         <p>{{profile.subtitle}}</p>
       </header>
+      <footer>
+        <ul>
+          <li v-for="link in links">
+            <a :href="link.url" :class="'fa-' + link.icon" :title="link.title" class="fa"></a>
+          </li>
+        </ul>
+      </footer>
     </section>
     <footer>
-      © JANE DOE DESIGN: HTML5 UP
+      © 2016 {{profile.title}}
     </footer>
   </div>
 </template>
@@ -19,8 +26,13 @@
       return {
         profile: {
           title: 'Gratitude',
-          subtitle: 'Carpe diem quam minimum credula postero'
-        }
+          subtitle: 'No Past No future'
+        },
+        links: [
+          { title: 'Blog', icon: 'hashtag', url: 'http://blog.asaki.me' },
+          { title: 'Github', icon: 'github', url: 'https://github.com/jikkai' },
+          { title: 'Weibo', icon: 'weibo', url: 'http://weibo.com/scharfrichter' }
+        ]
       }
     }
   }
@@ -29,34 +41,119 @@
 <style lang="sass">
   html,
   body {
+    width: 100%;
     height: 100%;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     background-color: #FFF;
-    background-image: url(./assets/overlay.png), linear-gradient(60deg, rgba(255, 165, 150, .5) 5%, rgba(0, 228, 255, .35)), url(./assets/bg.jpg);
+    background-image: url(./assets/overlay.png), linear-gradient(60deg, rgba(150, 185, 255, .5) 5%, rgba(0, 228, 255, .35)), url(./assets/bg.jpg);
     background-repeat: repeat, no-repeat, no-repeat;
     background-size: 100px 100px, cover, cover;
     background-position: top left, center center, bottom center;
     background-attachment: fixed, fixed, fixed;
     #app {
-      height: 100%;
+      min-height: 100%;
+      padding: 22px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      #profile {
-        width: 400px;
+      justify-content: space-between;
+      box-sizing: border-box;
+      overflow: hidden;
+      &::before {
+        content: '';
+        display: block;
+      }
+      >section {
+        position: relative;
+        width: 396px;
+        margin-bottom: 22px;
         padding: 66px 44px 44px 44px;
         text-align: center;
         background: #FFF;
         border-radius: 4px;
         box-sizing: border-box;
+        overflow: hidden;
         opacity: 0.95;
-        #avatar {
-          width: 122px;
-          height: 122px;
-          margin: auto;
-          background: url("./assets/jikkai.png");
-          border-radius: 50%;
+        header {
+          #avatar {
+            width: 122px;
+            height: 122px;
+            margin: auto;
+            background: #FFF url("./assets/avatar.png");
+            border-left: 18px solid #FFF;
+            border-right: 18px solid #FFF;
+            border-radius: 50%;
+            background-size: cover;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              margin-top: 61px;
+              background: #C8CCCF;
+              display: block;
+              z-index: -1;
+            }
+          }
+          >h1 {
+            margin-top: 22px;
+            margin-bottom: 14px;
+            color: #313F47;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+          }
+          >p {
+            margin-bottom: 22px;
+            color: #414F57;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
         }
+        >footer {
+          margin-bottom: 22px;
+          >ul {
+            display: flex;
+            justify-content: center;
+            li {
+              a {
+                width: 55px;
+                height: 55px;
+                margin: 0 10px;
+                font-size: 32px;
+                font-weight: 300px;
+                color: #ffffff;
+                text-shadow: 1.25px 0px 0px #C8CCCF, -1.25px 0px 0px #C8CCCF, 0px 1.25px 0px #C8CCCF, 0px -1.25px 0px #C8CCCF;
+                text-decoration: none;
+                border-radius: 50%;
+                border: solid 1px #C8CCCF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                transition: all .2s ease;
+                &:hover {
+                  border: solid 1px #FF7496;
+                  text-shadow: 1.25px 0px 0px #FF7496, -1.25px 0px 0px #FF7496, 0px 1.25px 0px #FF7496, 0px -1.25px 0px #FF7496;
+                }
+              }
+            }
+          }
+        }
+      }
+      >footer {
+        width: 100%;
+        color: hsla(0, 0%, 100%, 0.74902);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        align-self: flex-end;
+        
       }
     }
   }

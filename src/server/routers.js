@@ -19,6 +19,7 @@ const template = vmStream => {
       <title>${title}</title>
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
+      <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="app.bundle.css">
     </head>
     <body>`)
