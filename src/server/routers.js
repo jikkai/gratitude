@@ -20,7 +20,7 @@ const template = vmStream => {
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
       <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="app.bundle.css">
+      <link rel="stylesheet" href="server.css">
     </head>
     <body>`)
   )
@@ -28,7 +28,6 @@ const template = vmStream => {
   stream.append(vmStream)
       
   stream.append(str(`
-      <script src='./app.bundle.js'></script>
     </body>
     </html>`)
   )

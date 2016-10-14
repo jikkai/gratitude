@@ -1,6 +1,5 @@
 const path = require('path')
 const externals = require('webpack-node-externals')
-const webpack = require('webpack')
 
 module.exports = {
   target: 'node',
@@ -26,10 +25,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'file',
+        loader: 'css',
         query: {
           name : 'server.css'
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'sass'
       },
       {
         test: /\.js$/,

@@ -4,15 +4,16 @@
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./dist && npm run build:server && npm run build:client",
-    "build:server": "webpack --config build/webpack.server.js",
-    "build:client": "webpack --config build/webpack.client.prod.js",
-    "dev": "nodejs-dashboard better-npm-run dev",
-    "start": "nodejs-dashboard better-npm-run start"
+    "build": "rimraf ./server.css && rimraf ./server.js && npm run build:server && npm run build:style",
+    "build:server": "webpack --config ./webpack.config.js",
+    "build:style": "node-sass --output-style compressed -o ./ ./src/app/server.scss && npm run autoprefixer",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 8' -r ./server.css",
+    "dev": "better-npm-run dev",
+    "start": "better-npm-run start"
   },
   "betterScripts": {
     "dev": {
-      "command": "nodemon --watch src/server --exec \"npm run build:server && node\" server.js",
+      "command": "nodemon --watch src/server --exec \"npm run build && node\" server.js",
       "env": {
         "PORT": 5555,
         "VUE_ENV": "server",
@@ -69,11 +70,10 @@
     "json-loader": "^0.5.4",
     "koa-router": "^7.0.1",
     "koa-static": "^3.0.0",
-    "koa-webpack-dev-middleware": "^1.2.2",
-    "koa-webpack-hot-middleware": "^1.0.3",
     "node-sass": "^3.10.1",
     "nodejs-dashboard": "^0.1.1",
     "nodemon": "^1.11.0",
+    "postcss-cli": "^2.6.0",
     "precss": "^1.4.0",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
@@ -81,7 +81,6 @@
     "vue-loader": "^9.7.0",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.2",
-    "webpack-hot-middleware": "^2.13.0",
     "webpack-node-externals": "^1.5.4"
   }
 }
