@@ -11,6 +11,7 @@ import webpackHotMiddleware from 'koa-webpack-hot-middleware'
 
 import routers from './routers'
 import config from '../../build/webpack.client'
+import 'nodejs-dashboard'
 
 const app = new Koa()
 const router = koaRouter()

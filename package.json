@@ -7,8 +7,8 @@
     "build": "rimraf ./dist && npm run build:server && npm run build:client",
     "build:server": "webpack --config build/webpack.server.js",
     "build:client": "webpack --config build/webpack.client.prod.js",
-    "dev": "better-npm-run dev",
-    "start": "better-npm-run start"
+    "dev": "nodejs-dashboard better-npm-run dev",
+    "start": "nodejs-dashboard better-npm-run start"
   },
   "betterScripts": {
     "dev": {
@@ -45,24 +45,24 @@
   },
   "homepage": "https://github.com/jikkai/homepage#readme",
   "dependencies": {
-    "babel-runtime": "^6.9.2",
+    "babel-runtime": "^6.11.6",
     "combined-stream": "^1.0.5",
-    "koa": "^2.0.0-alpha.7",
+    "koa": "^2.0.0",
     "koa-convert": "^1.2.0",
     "koa-static-server": "^0.1.8",
     "string-to-stream": "^1.1.0",
     "typo.css": "git+https://github.com/jikkai/typo.css.git",
-    "vue": "^2.0.1",
-    "vue-server-renderer": "^2.0.1"
+    "vue": "^2.0.3",
+    "vue-server-renderer": "^2.0.3"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.0",
+    "autoprefixer": "^6.5.1",
     "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-runtime": "^6.9.0",
-    "babel-preset-latest": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
     "better-npm-run": "0.0.11",
-    "cross-env": "^3.1.1",
+    "cross-env": "^3.1.2",
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
@@ -72,15 +72,16 @@
     "koa-webpack-dev-middleware": "^1.2.2",
     "koa-webpack-hot-middleware": "^1.0.3",
     "node-sass": "^3.10.1",
-    "nodemon": "^1.9.2",
+    "nodejs-dashboard": "^0.1.1",
+    "nodemon": "^1.11.0",
     "precss": "^1.4.0",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "vue-loader": "^9.5.0",
+    "vue-loader": "^9.7.0",
     "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.1",
-    "webpack-hot-middleware": "^2.12.2",
-    "webpack-node-externals": "^1.4.3"
+    "webpack": "^1.13.2",
+    "webpack-hot-middleware": "^2.13.0",
+    "webpack-node-externals": "^1.5.4"
   }
 }
