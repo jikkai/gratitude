@@ -1,0 +1,10 @@
+{
+  "use": [
+    "postcss-cssnext",
+    "cssnano"
+  ],
+  "postcss-cssnext": {
+    "browsers": "> 5%",
+    "warnForDuplicates": false
+  }
+}
