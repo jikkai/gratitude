@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:script && npm run build:style",
     "build:script": "webpack --config ./webpack.config.js",
-    "build:style": "postcss -c ./.postcss.json -o ./server.css ./src/app/server.css",
+    "build:style": "postcss -c ./.postcss.json -o ./server.css ./src/app/style.css",
     "dev": "better-npm-run dev",
     "start": "better-npm-run start"
   },
