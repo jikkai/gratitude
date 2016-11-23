@@ -1,8 +1,11 @@
 {
   "use": [
     "postcss-cssnext",
+    "postcss-import",
     "cssnano"
   ],
+  "input": "./src/app/style.css",
+  "output": "./server.css",
   "postcss-cssnext": {
     "browsers": "> 5%",
     "warnForDuplicates": false

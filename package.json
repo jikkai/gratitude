@@ -1,12 +1,12 @@
 {
   "name": "gratitude",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:script && npm run build:style",
     "build:script": "webpack --config ./webpack.config.js",
-    "build:style": "postcss -c ./.postcss.json -o ./server.css ./src/app/style.css",
+    "build:style": "postcss -c ./.postcss.json",
     "dev": "better-npm-run dev",
     "start": "better-npm-run start"
   },
@@ -70,6 +70,7 @@
     "nodemon": "^1.11.0",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.2.0",
     "postcss-loader": "^1.1.1",
     "style-loader": "^0.13.1",
     "vue-loader": "^10.0.0",
