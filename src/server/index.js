@@ -6,7 +6,6 @@ import koaConvert from 'koa-convert'
 import koaStatic from 'koa-static'
 
 import routers from './routers'
-import 'nodejs-dashboard'
 
 const app = new Koa()
 const router = koaRouter()

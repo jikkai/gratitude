@@ -1,13 +1,10 @@
 {
   "name": "gratitude",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./server.css && rimraf ./server.js && npm run build:server && npm run build:style",
-    "build:server": "webpack --config ./webpack.config.js",
-    "build:style": "node-sass --output-style compressed -o ./ ./src/app/server.scss && npm run autoprefixer",
-    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 8' -r ./server.css",
+    "build": "webpack --config ./webpack.config.js",
     "dev": "better-npm-run dev",
     "start": "better-npm-run start"
   },
@@ -31,56 +28,50 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jikkai/homepage.git"
+    "url": "git+https://github.com/jikkai/gratitude.git"
   },
   "keywords": [
     "koa2",
-    "webpack",
+    "webpack2",
     "vue2",
     "ssr"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jikkai/homepage/issues"
+    "url": "https://github.com/jikkai/gratitude/issues"
   },
-  "homepage": "https://github.com/jikkai/homepage#readme",
+  "homepage": "https://github.com/jikkai/gratitude#readme",
   "dependencies": {
-    "babel-runtime": "^6.11.6",
+    "babel-runtime": "^6.18.0",
     "combined-stream": "^1.0.5",
-    "koa": "^2.0.0",
+    "koa": "next",
     "koa-convert": "^1.2.0",
-    "koa-static-server": "^0.1.8",
+    "koa-static-server": "^1.0.0",
     "string-to-stream": "^1.1.0",
-    "typo.css": "git+https://github.com/jikkai/typo.css.git",
-    "vue": "^2.0.3",
-    "vue-server-renderer": "^2.0.3"
+    "typo.css": "^2.1.2",
+    "vue": "^2.1.0",
+    "vue-server-renderer": "^2.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
-    "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.5",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-latest": "^6.16.0",
-    "better-npm-run": "0.0.11",
+    "better-npm-run": "0.0.13",
     "cross-env": "^3.1.2",
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "file-loader": "^0.9.0",
-    "json-loader": "^0.5.4",
-    "koa-router": "^7.0.1",
-    "koa-static": "^3.0.0",
-    "node-sass": "^3.10.1",
-    "nodejs-dashboard": "^0.1.1",
+    "koa-router": "next",
+    "koa-static": "next",
     "nodemon": "^1.11.0",
-    "postcss-cli": "^2.6.0",
-    "precss": "^1.4.0",
-    "rimraf": "^2.5.4",
-    "sass-loader": "^4.0.2",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-loader": "^1.1.1",
     "style-loader": "^0.13.1",
-    "vue-loader": "^9.7.0",
-    "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.2",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.0",
+    "webpack": "^2.1.0-beta.27",
     "webpack-node-externals": "^1.5.4"
   }
 }
