@@ -52,8 +52,8 @@
     "koa-static-server": "^1.0.0",
     "string-to-stream": "^1.1.0",
     "typo.css": "^2.1.2",
-    "vue": "^2.1.0",
-    "vue-server-renderer": "^2.1.0"
+    "vue": "latest",
+    "vue-server-renderer": "latest"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -73,8 +73,8 @@
     "postcss-import": "^8.2.0",
     "postcss-loader": "^1.1.1",
     "style-loader": "^0.13.1",
-    "vue-loader": "^10.0.0",
-    "vue-template-compiler": "^2.1.0",
+    "vue-loader": "latest",
+    "vue-template-compiler": "latest",
     "webpack": "^2.1.0-beta.27",
     "webpack-node-externals": "^1.5.4"
   }
