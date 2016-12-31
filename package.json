@@ -1,81 +1,28 @@
 {
   "name": "gratitude",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:script && npm run build:style",
-    "build:script": "webpack --config ./webpack.config.js",
-    "build:style": "postcss -c ./.postcss.json",
-    "dev": "better-npm-run dev",
-    "start": "better-npm-run start"
-  },
-  "betterScripts": {
-    "dev": {
-      "command": "nodemon --watch src/server --exec \"npm run build && node\" server.js",
-      "env": {
-        "PORT": 5555,
-        "VUE_ENV": "server",
-        "NODE_ENV": "development"
-      }
-    },
-    "start": {
-      "command": "node server.js",
-      "env": {
-        "PORT": 5555,
-        "VUE_ENV": "server",
-        "NODE_ENV": "production"
-      }
-    }
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jikkai/gratitude.git"
   },
-  "keywords": [
-    "koa2",
-    "webpack2",
-    "vue2",
-    "ssr"
-  ],
-  "author": "",
+  "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jikkai/gratitude/issues"
   },
   "homepage": "https://github.com/jikkai/gratitude#readme",
   "dependencies": {
-    "babel-runtime": "^6.18.0",
-    "combined-stream": "^1.0.5",
-    "koa": "next",
-    "koa-convert": "^1.2.0",
-    "koa-static-server": "^1.0.0",
-    "string-to-stream": "^1.1.0",
-    "typo.css": "^2.1.2",
-    "vue": "latest",
-    "vue-server-renderer": "latest"
+    "font-awesome": "^4.7.0",
+    "nuxt": "^0.9.5",
+    "postcss-cssnext": "^2.9.0",
+    "typo.css": "^2.1.2"
   },
-  "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.8",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-latest": "^6.16.0",
-    "better-npm-run": "0.0.13",
-    "cross-env": "^3.1.2",
-    "css-loader": "^0.26.0",
-    "cssnano": "^3.8.0",
-    "file-loader": "^0.9.0",
-    "koa-router": "next",
-    "koa-static": "next",
-    "nodemon": "^1.11.0",
-    "postcss-cli": "^2.6.0",
-    "postcss-cssnext": "^2.8.0",
-    "postcss-import": "^8.2.0",
-    "postcss-loader": "^1.1.1",
-    "style-loader": "^0.13.1",
-    "vue-loader": "latest",
-    "vue-template-compiler": "latest",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-node-externals": "^1.5.4"
-  }
+  "devDependencies": {}
 }

@@ -6,6 +6,7 @@
         <h1>{{profile.title}}</h1>
         <p>{{profile.subtitle}}</p>
       </header>
+      <nuxt-link to="/about">About page</nuxt-link>
       <footer>
         <ul>
           <li v-for="link in links">
@@ -14,6 +15,7 @@
         </ul>
       </footer>
     </section>
+
     <footer>
       © 2016 {{profile.title}}
     </footer>
