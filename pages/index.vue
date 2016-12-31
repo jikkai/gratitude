@@ -17,7 +17,7 @@
     </section>
 
     <footer>
-      © 2016 {{profile.title}}
+      © 2016 - 2017 {{profile.title}}
     </footer>
   </div>
 </template>
