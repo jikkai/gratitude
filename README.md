@@ -1,5 +1,5 @@
 # Gratitude
-[![Build Status](https://travis-ci.org/jikkai/gratitude.svg?branch=master)](https://travis-ci.org/jikkai/GSRNext)
+[![Build Status](https://travis-ci.org/jikkai/gratitude.svg?branch=master)](https://travis-ci.org/jikkai/gratitude)
 
 使えないホームページでございます。何卒よろしくお願い致します。
 
