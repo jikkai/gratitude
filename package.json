@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "PORT=5555 nuxt start"
   },
   "repository": {
     "type": "git",
