@@ -1,10 +1,17 @@
-const { join } = require('path')
+const path = require('path')
 
 module.exports = {
+  head: {
+    titleTemplate: 'Gratitude',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ]
+  },
   css: [
     'typo.css/typo.css',
     'font-awesome/css/font-awesome.min.css',
-    join(__dirname, 'styles/main.css')
+    path.join(__dirname, 'styles/main.css')
   ],
   build: {
     postcss: [

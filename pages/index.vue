@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-cloak>
+  <div id="app">
     <section>
       <header>
         <div id="avatar"></div>
@@ -16,15 +16,15 @@
       </footer>
     </section>
 
-    <footer>
-      © 2016 - 2017 {{profile.title}}
-    </footer>
+    <g-footer />
   </div>
 </template>
 
 <script>
+  import Footer from "~components/footer"
+
   export default {
-    data() {
+    data () {
       return {
         profile: {
           title: 'Gratitude',
@@ -36,6 +36,9 @@
           { title: 'Weibo', icon: 'weibo', url: 'http://weibo.com/scharfrichter' }
         ]
       }
+    },
+    components: {
+      GFooter: Footer
     }
   }
 </script>
