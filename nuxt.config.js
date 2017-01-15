@@ -9,14 +9,25 @@ module.exports = {
     ]
   },
   css: [
-    'typo.css/typo.css',
-    'font-awesome/css/font-awesome.min.css',
     path.join(__dirname, 'styles/main.css')
   ],
   build: {
     postcss: [
-      require('postcss-cssnext')({
-        browsers: ['last 3 versions']
+      require('postcss-salad')({
+        browsers: ['ie > 8', 'last 2 version'],
+        features: {
+          bem: {
+            shortcuts: {
+              component: 'b',
+              modifier: 'm',
+              descendent: 'e'
+            },
+            separators: {
+              modifier: '--',
+              descendent: '__'
+            }
+          }
+        }
       })
     ]
   }

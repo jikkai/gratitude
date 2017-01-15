@@ -19,10 +19,9 @@
   },
   "homepage": "https://github.com/jikkai/gratitude#readme",
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "nuxt": "^0.9.5",
-    "postcss-cssnext": "^2.9.0",
-    "typo.css": "^2.1.2"
+    "nuxt": "^0.9.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "postcss-salad": "^1.0.8"
+  }
 }
