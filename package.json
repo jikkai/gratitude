@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jikkai/gratitude#readme",
   "dependencies": {
-    "nuxt": "^0.9.5"
+    "nuxt": "^0.9.6"
   },
   "devDependencies": {
     "postcss-salad": "^1.0.8"
