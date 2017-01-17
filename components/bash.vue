@@ -2,11 +2,30 @@
   <div class="site-bash">
     <div class="site-bash__body">
       <section>
-        <span class="site-bash__body--code">$ echo $CAT</span>
-        <span>    /\_/\         /\_/\         /\_/\     </span>
-        <span>  =( °w° )=     =( °w° )=     =( °w° )=   </span>
-        <span>    )   (  //     )   (  //     )   (  // </span>
-        <span>   (__ __)//     (__ __)//     (__ __)//  </span>
+        <span class="site-bash__body--code">$ echo "Hello Jikkai"</span>
+        <div class="site-bash__body--cat">
+          <a href="https://blog.asaki.me">
+            <span>    /\_/\     </span>
+            <span>  =( °w° )=   </span>
+            <span>    )   (  // </span>
+            <span>   (__ __)//  </span>
+            <span>     BLOG     </span>
+          </a>
+          <a href="https://github.com/jikkai">
+            <span>    /\_/\     </span>
+            <span>  =( °w° )=   </span>
+            <span>    )   (  // </span>
+            <span>   (__ __)//  </span>
+            <span>    GITHUB    </span>
+          </a>
+          <a href="http://weibo.com/scharfrichter">
+            <span>    /\_/\     </span>
+            <span>  =( °w° )=   </span>
+            <span>    )   (  // </span>
+            <span>   (__ __)//  </span>
+            <span>    WEIBO     </span>
+          </a>
+        </div>
       </div>
     </section>
   </div>
@@ -50,23 +69,32 @@
 
         & section {
           size: 100%;
-          padding: 48px 12px;
-          padding-bottom: 48px;
+          padding: 48px 12px 32px;
           overflow: auto;
           box-sizing: border-box;
         }
 
         @m code {
-          margin-bottom: 12px;
           color: #FFF;
         }
 
-        & span {
-          width: 100%;
-          white-space: pre;
-          outline: 0;
-          display: block;
-          box-sizing: border-box;
+        @m cat {
+          margin-top: 18px;
+          display: flex;
+          & a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              color: #81C79E;
+            }
+          }
+          & span {
+            width: 100%;
+            white-space: pre;
+            outline: 0;
+            display: block;
+            box-sizing: border-box;
+          }
         }
       }
     }
