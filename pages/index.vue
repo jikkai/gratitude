@@ -1,9 +1,7 @@
 <template>
   <div class="site">
     <g-header />
-
     <g-bash />
-
     <g-footer />
   </div>
 </template>

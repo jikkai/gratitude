@@ -1,5 +1,7 @@
 <template>
   <div class="site">
+    <g-header />
+    
     <p>Hi from {{ name }}</p>
     <nuxt-link to="/">Home page</nuxt-link>
 
@@ -8,6 +10,7 @@
 </template>
 
 <script>
+  import Header from '~components/header'
   import Footer from "~components/footer"
 
   export default {
@@ -17,6 +20,7 @@
       }
     },
     components: {
+      GHeader: Header,
       GFooter: Footer
     }
   }

@@ -4,6 +4,13 @@
       <section>
         <span class="site-bash__body--code">$ echo "Hello Jikkai"</span>
         <div class="site-bash__body--cat">
+          <nuxt-link to="/about">
+            <span>    /\_/\     </span>
+            <span>  =( °w° )=   </span>
+            <span>    )   (  // </span>
+            <span>   (__ __)//  </span>
+            <span>    ABOUT     </span>
+          </nuxt-link>
           <a href="https://blog.asaki.me">
             <span>    /\_/\     </span>
             <span>  =( °w° )=   </span>
@@ -17,13 +24,6 @@
             <span>    )   (  // </span>
             <span>   (__ __)//  </span>
             <span>    GITHUB    </span>
-          </a>
-          <a href="http://weibo.com/scharfrichter">
-            <span>    /\_/\     </span>
-            <span>  =( °w° )=   </span>
-            <span>    )   (  // </span>
-            <span>   (__ __)//  </span>
-            <span>    WEIBO     </span>
           </a>
         </div>
       </div>
