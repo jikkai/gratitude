@@ -1,5 +1,5 @@
-# Gratitude
-[![Build Status](https://travis-ci.org/jikkai/gratitude.svg?branch=master)](https://travis-ci.org/jikkai/gratitude)
+# Period
+[![Build Status](https://travis-ci.org/jikkai/period.svg?branch=master)](https://travis-ci.org/jikkai/period)
 
 使えないホームページでございます。何卒よろしくお願い致します。
 
@@ -11,4 +11,4 @@ npm start
 ```
 
 ## License
-Licensed under [MIT](https://github.com/jikkai/gratitude/blob/master/LICENSE).
+Licensed under [MIT](https://github.com/jikkai/period/blob/master/LICENSE).

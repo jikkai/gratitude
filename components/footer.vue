@@ -1,5 +1,29 @@
 <template>
-  <footer>
-    © 2016 - 2017 Gratitude
+  <footer class="site-footer">
+    © {{ fromDate }} - {{ toDate }} <span class="site-footer__title">{{ title }}</span>
   </footer>
 </template>
+
+<script>
+  import { mapState } from 'vuex'
+
+  export default {
+    computed: mapState([
+      'title', 'fromDate', 'toDate'
+    ])
+  }
+</script>
+
+<style>
+  @component-namespace site {
+    @b footer {
+      width: 100%;
+      margin-bottom: 12px;
+      text-align: center;
+
+      @e title {
+        font-family: 'Satisfy', cursive;
+      }
+    }
+  }
+</style>

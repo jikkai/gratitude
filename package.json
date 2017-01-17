@@ -1,6 +1,6 @@
 {
-  "name": "gratitude",
-  "version": "2.2.0",
+  "name": "period",
+  "version": "3.0.0",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jikkai/gratitude.git"
+    "url": "git+https://github.com/jikkai/period.git"
   },
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jikkai/gratitude/issues"
+    "url": "https://github.com/jikkai/period/issues"
   },
-  "homepage": "https://github.com/jikkai/gratitude#readme",
+  "homepage": "https://github.com/jikkai/period#readme",
   "dependencies": {
     "nuxt": "^0.9.6"
   },

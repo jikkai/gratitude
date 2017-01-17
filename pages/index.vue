@@ -1,17 +1,22 @@
 <template>
-  <div>
-    <g-floatball />
+  <div class="site">
+    <g-header />
+
+    <g-bash />
+
     <g-footer />
   </div>
 </template>
 
 <script>
-  import Floatball from '~components/floatball'
+  import Header from '~components/header'
+  import Bash from '~components/bash'
   import Footer from "~components/footer"
 
   export default {
     components: {
-      GFloatball: Floatball,
+      GHeader: Header,
+      GBash: Bash,
       GFooter: Footer
     }
   }

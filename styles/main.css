@@ -1,13 +1,3 @@
 @reset-global pc;
 
-html, body, #__nuxt, #__nuxt >* {
-  width: 100%;
-  height: 100%;
-  color: #FFF #1F2024;
-}
-
-::selection {
-  color: #1F2024 #FFF;
-}
-
-@import "./components/footer.css";
+@import "./reset.css";
