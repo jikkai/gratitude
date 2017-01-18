@@ -1,14 +1,29 @@
 <template>
   <div class="site-profile">
-    123
+    <section class="site-profile__block">
+      <div>Test</div>
+    </section>
   </div>
 </template>
+
+<script>
+  export default {
+    created () {
+
+    }
+  }
+</script>
 
 <style>
   @component-namespace site {
     @b profile {
-      max-width: 80%;
+      width: 80%;
       margin: auto;
+
+      @e block {
+        padding: 12px;
+        box-sizing: border-box;
+      }
     }
   }
 </style>
