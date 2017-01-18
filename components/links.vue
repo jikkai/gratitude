@@ -2,7 +2,7 @@
   <div class="site-links">
     <section class="site-links__block" v-for="item in meta.links">
       <h3>
-        <a :href="item.link" traget="_blank">
+        <a :href="item.link" target="_blank">
           {{ item.title }}
         </a>
       </h3>
