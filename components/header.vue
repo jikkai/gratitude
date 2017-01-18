@@ -2,19 +2,21 @@
   <header class="site-header">
     <h1>
       <nuxt-link to="/">
-        {{ title }}
+        {{ meta.title }}
       </nuxt-link>
     </h1>
   </header>
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import meta from '~/lib/meta'
 
   export default {
-    computed: mapState([
-      'title'
-    ])
+    data () {
+      return {
+        meta
+      }
+    }
   }
 </script>
 
@@ -25,11 +27,6 @@
       text-align: center;
       font-family: 'Satisfy', cursive;
       font-size: 48px;
-
-      & a {
-        color: inherit;
-        text-decoration: none;
-      }
     }
   }
 </style>

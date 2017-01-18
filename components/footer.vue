@@ -1,17 +1,19 @@
 <template>
   <footer class="site-footer">
-    © {{ fromDate }} - {{ toDate }} 
-    <span class="site-footer__title">{{ title }}</span>
+    © {{ meta.fromDate }} - {{ meta.toDate }} 
+    <span class="site-footer__title">{{ meta.title }}</span>
   </footer>
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import meta from '~/lib/meta'
 
   export default {
-    computed: mapState([
-      'title', 'fromDate', 'toDate'
-    ])
+    data () {
+      return {
+        meta
+      }
+    }
   }
 </script>
 

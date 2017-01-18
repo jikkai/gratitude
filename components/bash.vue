@@ -82,8 +82,6 @@
           margin-top: 18px;
           display: flex;
           & a {
-            color: inherit;
-            text-decoration: none;
             &:hover {
               color: #81C79E;
             }
