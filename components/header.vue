@@ -1,6 +1,10 @@
 <template>
   <header class="site-header">
-    <h1>{{ title }}</h1>
+    <h1>
+      <nuxt-link to="/">
+        {{ title }}
+      </nuxt-link>
+    </h1>
   </header>
 </template>
 
@@ -21,6 +25,11 @@
       text-align: center;
       font-family: 'Satisfy', cursive;
       font-size: 48px;
+
+      & a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 </style>

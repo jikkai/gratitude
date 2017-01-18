@@ -1,6 +1,7 @@
 <template>
   <footer class="site-footer">
-    © {{ fromDate }} - {{ toDate }} <span class="site-footer__title">{{ title }}</span>
+    © {{ fromDate }} - {{ toDate }} 
+    <span class="site-footer__title">{{ title }}</span>
   </footer>
 </template>
 
@@ -19,6 +20,7 @@
     @b footer {
       width: 100%;
       margin-bottom: 12px;
+      padding-top: 48px;
       text-align: center;
 
       @e title {
