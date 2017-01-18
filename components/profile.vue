@@ -15,7 +15,7 @@
               <progress :value="item.value.replace('%', '')" max="100">{{ item.value }}</progress>
             </template>
             <template v-else>
-              <a href="item.value">
+              <a :href="item.value">
                 {{ item.value.replace(/^https?:\/\//, '') }}
               </a>
             </template>
