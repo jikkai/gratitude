@@ -41,8 +41,8 @@
 <style>
   @component-namespace site {
     @b profile {
-      width: 40%;
-      min-width: 300px;
+      width: 80%;
+      max-width: 640px;
       margin: auto;
 
       @e block {
@@ -81,13 +81,16 @@
 
               & a {
                 color: #869E97;
-                &:hover {
-                  color: #81C79E;
-                }
               }
             }
           }
         }
+      }
+    }
+
+    @media (min-width: 640px) {
+      @b profile {
+        width: 50%;
       }
     }
   }

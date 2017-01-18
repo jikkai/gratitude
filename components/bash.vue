@@ -4,13 +4,6 @@
       <section>
         <span class="site-bash__body--code">$ echo "Hello Jikkai"</span>
         <div class="site-bash__body--cat">
-          <nuxt-link to="/about">
-            <span>    /\_/\     </span>
-            <span>  =( °w° )=   </span>
-            <span>    )   (  // </span>
-            <span>   (__ __)//  </span>
-            <span>    ABOUT     </span>
-          </nuxt-link>
           <a href="https://blog.asaki.me">
             <span>    /\_/\     </span>
             <span>  =( °w° )=   </span>
@@ -18,13 +11,20 @@
             <span>   (__ __)//  </span>
             <span>     BLOG     </span>
           </a>
-          <a href="https://github.com/jikkai">
+          <nuxt-link to="/about">
             <span>    /\_/\     </span>
             <span>  =( °w° )=   </span>
             <span>    )   (  // </span>
             <span>   (__ __)//  </span>
-            <span>    GITHUB    </span>
-          </a>
+            <span>    ABOUT     </span>
+          </nuxt-link>
+          <nuxt-link to="/link">
+            <span>    /\_/\     </span>
+            <span>  =( °w° )=   </span>
+            <span>    )   (  // </span>
+            <span>   (__ __)//  </span>
+            <span>     LINK     </span>
+          </nuxt-link>
         </div>
       </div>
     </section>
@@ -81,11 +81,7 @@
         @m cat {
           margin-top: 18px;
           display: flex;
-          & a {
-            &:hover {
-              color: #81C79E;
-            }
-          }
+
           & span {
             width: 100%;
             white-space: pre;
