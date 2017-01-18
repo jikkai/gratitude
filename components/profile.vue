@@ -70,12 +70,13 @@
             display: flex;
 
             & label {
-              min-width: 220px;
+              min-width: 240px;
               display: block;
-              flex: 1;
             }
 
             & span {
+              padding-right: 12px;
+              display: block;
               flex: 1;
 
               & a {
