@@ -42,8 +42,13 @@
   @component-namespace site {
     @c profile {
       width: 80%;
-      max-width: 640px;
+      max-width: 540px;
       margin: auto;
+      @media (min-width: 640px) {
+        @c profile {
+          width: 98%;
+        }
+      }
 
       @d block {
         margin: 16px 0;
@@ -70,7 +75,7 @@
             display: flex;
 
             & label {
-              min-width: 240px;
+              min-width: 260px;
               display: block;
             }
 
@@ -85,12 +90,6 @@
             }
           }
         }
-      }
-    }
-
-    @media (min-width: 640px) {
-      @c profile {
-        width: 50%;
       }
     }
   }
