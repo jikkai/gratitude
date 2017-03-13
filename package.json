@@ -1,6 +1,6 @@
 {
   "name": "period",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jikkai/period#readme",
   "dependencies": {
-    "nuxt": "^0.9.6"
+    "nuxt": "^0.9.9"
   },
   "devDependencies": {
     "postcss-salad": "^1.0.8"

@@ -40,12 +40,12 @@
 
 <style>
   @component-namespace site {
-    @b profile {
+    @c profile {
       width: 80%;
       max-width: 640px;
       margin: auto;
 
-      @e block {
+      @d block {
         margin: 16px 0;
         box-sizing: border-box;
 
@@ -89,7 +89,7 @@
     }
 
     @media (min-width: 640px) {
-      @b profile {
+      @c profile {
         width: 50%;
       }
     }

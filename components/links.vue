@@ -26,14 +26,14 @@
 
 <style >
   @component-namespace site {
-    @b links {
+    @c links {
       width: 80%;
       margin: auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
 
-      @e block {
+      @d block {
         width: 40%;
         min-width: 240px;
         margin: 0 auto 16px;

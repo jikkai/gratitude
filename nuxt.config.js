@@ -23,9 +23,9 @@ module.exports = {
         features: {
           bem: {
             shortcuts: {
-              component: 'b',
+              component: 'c',
               modifier: 'm',
-              descendent: 'e'
+              descendent: 'd'
             },
             separators: {
               modifier: '--',

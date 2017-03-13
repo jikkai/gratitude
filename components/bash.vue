@@ -26,19 +26,19 @@
             <span>     LINK     </span>
           </nuxt-link>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
 <style>
   @component-namespace site {
-    @b bash {
+    @c bash {
       width: 100%;
       display: flex;
       justify-content: center;
 
-      @e body {
+      @d body {
         position: relative;
         max-width: 80%;
         color: #869E97 #353845;

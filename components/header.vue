@@ -22,7 +22,7 @@
 
 <style >
   @component-namespace site {
-    @b header {
+    @c header {
       padding-top: 24px;
       text-align: center;
       font-family: 'Satisfy', cursive;

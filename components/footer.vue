@@ -19,13 +19,13 @@
 
 <style>
   @component-namespace site {
-    @b footer {
+    @c footer {
       width: 100%;
       margin-bottom: 12px;
       padding-top: 48px;
       text-align: center;
 
-      @e title {
+      @d title {
         font-family: 'Satisfy', cursive;
       }
     }
