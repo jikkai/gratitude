@@ -1,0 +1,4 @@
+<footer class="site-footer">
+  © {{since}} - {{now}}
+  <span class="site-footer__title">{{title}}</span>
+</footer>

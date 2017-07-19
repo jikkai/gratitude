@@ -1,0 +1,27 @@
+@reset-global pc;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: #FFF #1F2024;
+  font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: #81C79E;
+  }
+}
+
+.site {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+::selection {
+  color: #1F2024 #FFF;
+}

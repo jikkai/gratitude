@@ -2,9 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{{block 'title'}}My Site{{/block}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  {{each meta}}
+  <meta name="{{$value.name}}" content="{{$value.content}}" />
+  {{/each}}
+
+  <title>{{block 'title'}}{{/block}}</title>
+
+  {{each link}}
+  <link rel="{{$value.rel}}" href="{{root}}{{$value.href}}" />
+  {{/each}}
 </head>
-<body>
+<body class="site">
+  {{include './header'}}
   {{block 'content'}}{{/block}}
+  {{include './footer'}}
 </body>
 </html>

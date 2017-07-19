@@ -1,7 +1,6 @@
 <% extend('../layout/layout.art') %>
+{{block 'title'}}{{title}} - Links{{/block}}
 
 {{block 'content'}}
-{{if user}}
   <h2>links</h2>
-{{/if}}
 {{/block}}
