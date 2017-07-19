@@ -1,12 +1,10 @@
 {
   "name": "period",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "My homepage -Remaster-",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "PORT=5555 nuxt start"
+    "build": "node ./lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +17,7 @@
   },
   "homepage": "https://github.com/jikkai/period#readme",
   "dependencies": {
-    "nuxt": "^0.9.9"
-  },
-  "devDependencies": {
-    "postcss-salad": "^1.0.8"
+    "art-template": "^4.12.1",
+    "rimraf": "^2.6.1"
   }
 }

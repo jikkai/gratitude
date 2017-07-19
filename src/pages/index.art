@@ -1,0 +1,7 @@
+<% extend('../layout/layout.art') %>
+
+{{block 'content'}}
+{{if user}}
+  <h2>hello period</h2>
+{{/if}}
+{{/block}}

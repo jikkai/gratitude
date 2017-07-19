@@ -1,3 +1,4 @@
 node_modules
 *.log
-.nuxt
+public
+.DS_Store
