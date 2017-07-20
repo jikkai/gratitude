@@ -19,7 +19,7 @@
   "dependencies": {
     "art-template": "^4.12.1",
     "fs-extra": "^4.0.0",
-    "postcss": "^6.0.7",
+    "postcss": "^6.0.8",
     "postcss-salad": "^2.0.1"
   }
 }
