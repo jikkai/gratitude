@@ -13,7 +13,7 @@ module.exports = {
     publicPath: './'
   },
   resolve: {
-    extensions: ['.ts', '.js', '.tsx', '.css', '.json'],
+    extensions: ['.tsx', '.ts', '.js', '.css', '.json'],
     alias: {
       '~': path.join(__dirname, '../src')
     }
