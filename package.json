@@ -1,0 +1,46 @@
+{
+  "name": "period",
+  "version": "5.0.0",
+  "description": "The homepage for asaki.me",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "nodemon build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikkai/period.git"
+  },
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jikkai/period/issues"
+  },
+  "homepage": "https://github.com/jikkai/period#readme",
+  "dependencies": {
+    "@types/react": "^15.0.39",
+    "@types/react-dom": "^15.5.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.1",
+    "css-loader": "^0.28.4",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-salad": "^2.0.1",
+    "progress-bar-webpack-plugin": "^1.10.0",
+    "rimraf": "^2.6.1",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-hot-middleware": "^2.18.2"
+  }
+}
