@@ -36,7 +36,7 @@ base.plugins.push(
 base.module.rules.push({
   test: /\.css$/,
   loader: ExtractTextPlugin.extract({
-    use: [{ loader: 'css-loader' }, 'postcss-loader'],
+    use: [{ loader: 'css-loader?minimize=true' }, 'postcss-loader'],
     fallback: 'style-loader'
   })
 })

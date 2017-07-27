@@ -2,10 +2,10 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import './styles/main'
 
-import { Hello } from './components/Hello'
+import Router from './router'
 
 ReactDOM.render(
-  <Hello compiler='TypeScript' framework='React' />,
+  <Router />,
   document.querySelector('#app')
 )
 
