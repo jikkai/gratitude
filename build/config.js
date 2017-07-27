@@ -3,7 +3,8 @@ module.exports = {
   title: 'Period',
   vendor: [
     'react',
-    'react-dom'
+    'react-dom',
+    'react-router'
   ],
   cssModules: false
 }

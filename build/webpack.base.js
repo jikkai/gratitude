@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        use: 'awesome-typescript-loader'
+        use: ['react-hot-loader/webpack', 'awesome-typescript-loader']
       },
       {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
