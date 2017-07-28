@@ -1,0 +1,14 @@
+@component-namespace period {
+  @c home {
+    size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @d title {
+      font-size: 72px;
+      font-family: Satisfy, cursive;
+      text-align: center;
+    }
+  }
+}

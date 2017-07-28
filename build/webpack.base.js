@@ -31,7 +31,7 @@ module.exports = {
         use: ['react-hot-loader/webpack', 'awesome-typescript-loader']
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         use: 'file-loader?limit=8192'
       }
     ]
