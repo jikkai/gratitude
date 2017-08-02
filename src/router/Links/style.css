@@ -1,5 +1,5 @@
 @component-namespace period {
-  @c profile {
+  @c links {
     size: 100%;
     animation: fadeIn 1s;
   }

@@ -1,29 +1,22 @@
 import * as React from 'react'
 import { HashRouter, Route, Link } from 'react-router-dom'
-import Loading from '../components/Loading'
-import Navigation from '../components/Navigation'
 
 import Home from './Home'
+import Asaki from './Asaki'
 import Profile from './Profile'
-import Resume from './Resume'
 import Portfolio from './Portfolio'
-import Contact from './Contact'
+import Links from './Links'
 
 class Router extends React.Component<undefined, undefined> {
   render () {
     return (
       <HashRouter>
         <div className="period-site">
-          <Navigation />
-
-          <div className="period-main">
-            <Route exact path="/" component={Home}/>
-            <Route path="/profile" component={Profile}/>
-            <Route path="/resume" component={Resume}/>
-            <Route path="/portfolio" component={Portfolio}/>
-            <Route path="/contact" component={Contact}/>
-            {/* <Loading /> */}
-          </div>
+          <Route exact path="/" component={Home}/>
+          <Route path="/profile" component={Profile}/>
+          <Route path="/asaki" component={Asaki}/>
+          <Route path="/portfolio" component={Portfolio}/>
+          <Route path="/links" component={Links}/>
         </div>
       </HashRouter>
     )
