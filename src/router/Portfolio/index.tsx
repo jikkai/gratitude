@@ -2,17 +2,18 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import './style'
 
-class Home extends React.Component<undefined, any> {
+class Portfolio extends React.Component<undefined, any> {
   constructor (props: any) {
     super(props)
   }
 
   render () {
     return (
-      <section className="period-home">
+      <section className="period-portfolio">
+        Portfolio
       </section>
     )
   }
 }
 
-export default Home
+export default Portfolio
