@@ -1,6 +1,0 @@
-@component-namespace period {
-  @c portfolio {
-    size: 100%;
-    animation: fadeIn 1s;
-  }
-}

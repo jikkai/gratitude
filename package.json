@@ -4,9 +4,7 @@
   "description": "The homepage for asaki.me",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rimraf ./dist",
-    "build": "webpack --config build/webpack.prod.js",
-    "dev": "nodemon build/server.js"
+    "dev": "nuxt"
   },
   "repository": {
     "type": "git",
@@ -19,38 +17,7 @@
   },
   "homepage": "https://github.com/jikkai/period#readme",
   "dependencies": {
-    "feather-icons": "^3.2.1",
-    "lodash-es": "^4.17.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2"
+    "nuxt": "^1.0.0-rc11"
   },
-  "devDependencies": {
-    "@types/lodash-es": "^4.14.5",
-    "@types/node": "^8.0.19",
-    "@types/react": "^16.0.0",
-    "@types/react-dom": "^15.5.1",
-    "@types/react-hot-loader": "^3.0.3",
-    "@types/react-router-dom": "^4.0.7",
-    "@types/webpack": "^3.0.5",
-    "@types/webpack-env": "^1.13.0",
-    "awesome-typescript-loader": "^3.2.2",
-    "css-loader": "^0.28.4",
-    "express": "^4.15.3",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.30.1",
-    "nodemon": "^1.11.0",
-    "postcss-loader": "^2.0.6",
-    "postcss-salad": "^2.0.1",
-    "progress-bar-webpack-plugin": "^1.10.0",
-    "react-hot-loader": "^3.0.0-beta.7",
-    "rimraf": "^2.6.1",
-    "source-map-loader": "^0.2.1",
-    "style-loader": "^0.18.2",
-    "typescript": "^2.4.2",
-    "webpack": "^3.4.1",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.18.2"
-  }
+  "devDependencies": {}
 }
