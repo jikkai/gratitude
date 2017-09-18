@@ -19,5 +19,7 @@
   "dependencies": {
     "nuxt": "^1.0.0-rc11"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "postcss-salad": "^2.0.1"
+  }
 }
