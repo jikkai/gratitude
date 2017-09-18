@@ -7,7 +7,7 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' },
-      { rel: 'favicon', href: '/static/favicon.png' }
+      { rel: 'icon', href: '/favicon.png' }
     ]
   },
   build: {
