@@ -2,6 +2,7 @@
 
 html, body, body > * {
   size: 100%;
+  color: 666;
   font: 300 1em/1.8 "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
   background: url(~assets/bg.jpg) no-repeat;
   background-position: top right;
@@ -37,7 +38,7 @@ h5, h6 {
 
 a {
   color: #1ABC9C;
-  color: #555;
+  color: #444;
   text-decoration: none;
   &:hover {
     cursor: pointer;

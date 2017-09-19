@@ -1,13 +1,11 @@
 <template>
   <section class="period-index">
-    <header class="period-title">
+    <header class="period-index__title">
       <h1>Period</h1>
-      <p>
-        <em>Gut Ding will Weile haben.</em>
-      </p>
+      <p>Gut Ding will Weile haben.</p>
     </header>
 
-    <div class="period-links">
+    <div class="period-index__links">
       <ul>
         <li v-for="link in links" :key="link.url">
           <a v-if="link.external" :href="link.url">{{ link.title }}</a>
@@ -39,40 +37,43 @@
   @component-namespace period {
     @c index {
       size: 100%;
+      padding-left: 12%;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: center;
       user-select: none;
       cursor: default;
-    }
 
-    @c title {
-      padding-left: 12%;
-      box-sizing: border-box;
-      & h1 {
-        color: #000;
-        font-family: "Alegreya Sans SC", sans-serif;
-        font-size: 64px;
+      @d title {
+        & h1 {
+          color: #000;
+          font-family: "Alegreya Sans SC", sans-serif;
+          font-size: 64px;
+        }
+
+        & p {
+          font-family: "Work Sans", sans-serif;
+          font-size: 20px;
+        }
       }
-    }
 
-    @c links {
-      margin-top: 24px;
-      padding-left: 12%;
-      box-sizing: border-box;
+      @d links {
+        margin-top: 24px;
 
-      & ul {
-        display: flex;
-        & li a {
-          margin-right: 1em;
-          padding: 0 1em;
-          border: 1px solid #888;
-          border-radius: 1em;
-          display: block;
-          transition: all .2s;
-          &:hover {
-            color: #1ABC9C;
-            border-color: #1ABC9C;
+        & ul {
+          display: flex;
+          & li a {
+            margin-right: 1em;
+            padding: 0 1em;
+            border: 1px solid #888;
+            border-radius: 1em;
+            display: block;
+            transition: all .2s;
+            &:hover {
+              color: #1ABC9C;
+              border-color: #1ABC9C;
+            }
           }
         }
       }
